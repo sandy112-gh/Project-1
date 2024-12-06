@@ -3,6 +3,11 @@ body {
   box-sizing: border-box;
   height: 100vh;
   background-color: #33a8c9;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+  grid-gap: 5px;
 }
 
 nav {
@@ -12,15 +17,30 @@ nav {
   align-items: center;
   height: 30px;
   background-color: ffffff;
+  grid-column: span 11;
 }
 
 nav div {
   font-size: 20px;
-  margin: 10px 50px;
-  padding: 10px;
+  margin: 10px;
   background-color: #ffffff;
 }
 
 section {
   display: flex;
+}
+
+.flex-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 30px;
+  grid-column: span 11;
+  background-color: #bb6824;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
 }
