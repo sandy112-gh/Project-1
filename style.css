@@ -30,6 +30,12 @@ section {
   display: flex;
 }
 
+.title-space {
+  grid-column: span 11;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-ctr {
   display: flex;
   justify-content: center;
