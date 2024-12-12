@@ -3,10 +3,9 @@ body {
   box-sizing: border-box;
   height: 100vh;
   background-color: #33a8c9;
-
   display: grid;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: 30px 1fr 1fr 1fr 1fr 1fr 1fr 30px;
+  grid-template-rows: 50px 2fr 1fr 1fr 1fr 1fr 30px;
 }
 
 nav {
@@ -18,21 +17,34 @@ nav {
 }
 
 nav div {
-  font-size: 20px;
-  margin: 30px;
+  font-size: 15px;
+  margin: 50px;
+  padding: 15px;
   background-color: #ffffff;
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
 }
 
 section {
   display: flex;
 }
 
-.title-space {
+#title-space {
   grid-column: span 11;
-  grid-row: span 2;
   justify-content: center;
   align-items: center;
   color: #ffdc98;
+}
+
+#mario-space {
+  grid-row: 3;
+  grid-column: 3;
+}
+
+#plant-space {
+  grid-row: 4;
+  grid-column: 10;
 }
 
 img {
@@ -40,12 +52,17 @@ img {
   width: 100%;
 }
 
-.red {
-  background-color: red;
-}
-
 .block-color {
   background-color: #bb6824;
+}
+
+.question-block {
+  background-color: #f7e655;
+  color: #ffffff;
+  font-size: 10vw;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
 }
 
 .pipe-color {
